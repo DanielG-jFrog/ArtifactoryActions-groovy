@@ -40,6 +40,10 @@ catch (HttpResponseException hre){
     println(hre)
     System.exit(1)
 }
+catch (Exception e){
+    println(e)
+    System.exit(1)
+}
 
 
 try {
@@ -50,6 +54,10 @@ try {
 }
 catch (HttpResponseException hre) {
     println("Failed to Upload. Reason: \n \n$hre")
+    System.exit(1)
+}
+catch (Exception e){
+    println(e)
     System.exit(1)
 }
 

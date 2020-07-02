@@ -32,6 +32,10 @@ try {
 catch(MissingPropertyException mpe){
     println("Bla $mpe")
 }
+catch (Exception e){
+    println(e)
+    System.exit(1)
+}
 
 try {
     jsonSlurper = new JsonSlurper()
@@ -40,6 +44,10 @@ try {
 }
 catch (JsonException je) {
     println("Create user failed: $je" )
+    System.exit(1)
+}
+catch (Exception e){
+    println(e)
     System.exit(1)
 }
 
@@ -56,8 +64,8 @@ catch (ResponseParseException rpe) {
     println("Create User Failed. Reason: $rpe")
     System.exit(1)
 }
-catch (Exception je) {
-    println("Create user failed: $je" )
+catch (Exception e) {
+    println("Create user failed: $e" )
     System.exit(1)
 }
 
@@ -67,5 +75,9 @@ try {
 }
 catch (ResponseParseException rpe){
     println("Cannot read response. Reason: " + rpe)
+    System.exit(1)
+}
+catch (Exception e){
+    println(e)
     System.exit(1)
 }

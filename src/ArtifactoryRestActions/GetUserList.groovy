@@ -19,8 +19,12 @@ def rt = new RESTClient(baseUrl)
 rt.auth.basic user, password
 rt.contentType = ContentType.JSON
 
-
-rt.get(path: getUsersPath){ response, json ->
-    println(response.status)
-    println(json.name[8])
+try {
+    rt.get(path: getUsersPath) { response, json ->
+        println(response.status)
+        println(json.name[8])
+    }
+}
+catch (Exception e){
+    println(e)
 }
