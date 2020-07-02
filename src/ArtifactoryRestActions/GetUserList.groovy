@@ -6,11 +6,10 @@ import groovyx.net.http.ContentType
 import groovyx.net.http.RESTClient
 
 
-//CreateUser
+//Artifactory credentials and base URL
 String baseUrl = "http://10.70.30.83:8082"
 String user = "admin"
 String password = "Dn2120091"
-
 
 // Users
 String getUsersPath = '/artifactory/api/security/users'

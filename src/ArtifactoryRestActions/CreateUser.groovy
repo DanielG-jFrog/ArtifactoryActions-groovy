@@ -1,20 +1,20 @@
 package ArtifactoryRestActions
 
 @Grab(group = 'org.codehaus.groovy.modules.http-builder', module = 'http-builder', version = '0.6')
+
 import groovyx.net.http.ContentType
 import groovyx.net.http.RESTClient
 import groovyx.net.http.ResponseParseException
 import groovy.json.JsonException
 import groovy.json.JsonSlurper
 
-//CreateUser
+//Artifactory credentials and base URL
 String baseUrl = "http://10.70.30.83:8082"
 String user = "admin"
 String password = "Dn2120091"
 
 //Resources
 String userJsonFilePath = "../Files/user.json"
-
 
 //Fields declaration
 def jsonFile

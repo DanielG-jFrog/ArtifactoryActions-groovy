@@ -1,6 +1,7 @@
 package ArtifactoryRestActions
 
 @Grab(group = 'org.codehaus.groovy.modules.http-builder', module = 'http-builder', version = '0.6')
+
 import groovyx.net.http.ContentType
 import groovyx.net.http.HttpResponseException
 import groovyx.net.http.RESTClient
@@ -8,12 +9,10 @@ import groovy.json.JsonSlurper
 import groovy.json.JsonException
 
 
-
-//Artifactory
+//Artifactory credentials and base URL
 String baseUrl = "http://10.70.30.83:8082"
 String user = "user1"
 String password = "password"
-
 
 //Fields declaration
 def resp
@@ -25,6 +24,7 @@ def jsonObject
 def rt = new RESTClient(baseUrl)
 rt.auth.basic user, password
 rt.contentType = ContentType.JSON
+
 
 try {
     String artifactJsonPath = "../Files/uploadArtifact.json"
