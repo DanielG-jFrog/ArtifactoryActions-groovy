@@ -25,7 +25,7 @@ rt.auth.basic user, password
 rt.contentType = ContentType.JSON
 
 try {
-    resp = rt.get(path: getUsersPath) { response, json ->
+        rt.get(path: getUsersPath) { response, json ->
         println(response.status)
         println(json.name[8])
         def outputJson = new JsonBuilder(json).toPrettyString()
