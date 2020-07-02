@@ -1,0 +1,12 @@
+{
+  "name": "user1",
+  "email" : "user1@jfrog.com",
+  "password": "password",
+  "admin": false,
+  "profileUpdatable": true,
+  "disableUIAccess" : false,
+  "hideUploads": false,
+  "groups": ["dep"],
+  "internalPasswordDisabled": false,
+  "realm": "Internal"
+}
