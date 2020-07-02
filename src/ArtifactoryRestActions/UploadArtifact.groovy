@@ -52,6 +52,7 @@ try {
             body: jsonObject,
             requestContentType: ContentType.JSON)
 }
+
 catch (HttpResponseException hre) {
     println("Failed to Upload. Reason: \n \n$hre")
     System.exit(1)
