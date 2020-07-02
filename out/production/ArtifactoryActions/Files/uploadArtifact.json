@@ -1,8 +1,0 @@
-
-{
-  "uri": "http://10.70.30.83:8082/artifactory/npm-local/text1.txt",
-  "downloadUri": "http://10.70.30.83:8082/artifactory/npm-local/text1.txt",
-  "repo": "npm-local",
-  "path": "./text1.txt",
-  "createdBy": "admin",
-}
