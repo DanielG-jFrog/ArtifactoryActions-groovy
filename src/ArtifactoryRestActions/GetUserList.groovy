@@ -13,8 +13,6 @@ String baseUrl = "http://10.70.30.83:8082"
 String user = "admin"
 String password = "Dn2120091"
 
-//Fields
-def resp
 
 // Routs
 String getUsersPath = '/artifactory/api/security/users'
